@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="408.0" layoutY="-4.0" strokeType="INSIDE" width="600.0">
+         <stroke>
+            <LinearGradient endX="0.5213270142180095" endY="1.0" startX="0.47393364928909953" startY="0.4928909952606635">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+         <fill>
+            <LinearGradient endX="0.7819905213270144" endY="1.0" startX="0.4075829383886256" startY="0.5971563981042654">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.023148147389292717" blue="0.023148147389292717" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4093959731543624">
+                     <color>
+                        <Color red="1.0" green="0.023148147389292717" blue="0.023148147389292717" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text layoutX="219.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Relatorio de vendas">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="86.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="data inicial">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField layoutX="171.0" layoutY="64.0" />
+      <Text layoutX="86.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="data final" />
+      <TextField layoutX="171.0" layoutY="105.0" />
+      <TableView layoutX="360.0" layoutY="51.0" prefHeight="200.0" prefWidth="220.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="data" />
+          <TableColumn prefWidth="75.0" text="client" />
+            <TableColumn prefWidth="75.0" text="total" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

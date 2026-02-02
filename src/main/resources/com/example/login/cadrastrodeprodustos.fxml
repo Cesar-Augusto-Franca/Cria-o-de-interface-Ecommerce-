@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="233.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadrastar produto">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="42.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome do produto" />
+      <TextField layoutX="159.0" layoutY="58.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.8157894611358643" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TextField>
+      <Text layoutX="68.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo" />
+      <TextField layoutX="159.0" layoutY="95.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TextField>
+      <Text layoutX="76.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço" />
+      <Text layoutX="23.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade em estoque" />
+      <TableView layoutX="328.0" layoutY="61.0" prefHeight="200.0" prefWidth="270.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="produto" />
+          <TableColumn prefWidth="75.0" text="codigo" />
+            <TableColumn prefWidth="75.0" text="preço" />
+            <TableColumn prefWidth="75.0" text="quantidade em estoque" />
+        </columns>
+      </TableView>
+      <TextField layoutX="159.0" layoutY="136.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TextField>
+      <TextField layoutX="159.0" layoutY="179.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TextField>
+   </children>
+</AnchorPane>
